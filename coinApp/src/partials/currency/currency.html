@@ -1,0 +1,76 @@
+<section class="currency">
+  <div class="container">
+    <h1 class="currency__title title">
+      Валютный обмен
+    </h1>
+    <div class="currency__block" id="currencyBlock">
+      <div class="currency__left" id="currencyLeft">
+        <div class="currency__change">
+          <h2 class="currency__subtitle">Обмен валюты</h2>
+          <form action="#" class="currency__form d-flex">
+
+            <span class="currency__formSucces">Операция выполнена</span>
+            <span class="currency__formError"></span>
+
+            <div class="currency__changeLeft">
+              <div class="currency__from">
+                <label for="from" class="currency__label">Из</label>
+                <select name="from" id="currencyFrom" class="currency__select choicesFrom">
+                  <option>EUR</option>
+                  <option>USD</option>
+                  <option>RUB</option>
+                  <option>BYR</option>
+                  <option>BTC</option>
+                  <option>UAH</option>
+                  <option>AUD</option>
+                  <option>CAD</option>
+                  <option>CHF</option>
+                  <option>CNH</option>
+                  <option>ETH</option>
+                  <option>GBP</option>
+                  <option>HKD</option>
+                  <option>JPY</option>
+                  <option>NZD</option>
+                </select>
+                <div class="select-arrow select-arrowFrom"></div>
+              </div>
+
+              <div class="currency__to">
+                <label for="to" class="currency__label">в</label>
+                <select name="to" id="currencyTo" class="currency__select choicesTo">
+                  <option>EUR</option>
+                  <option>USD</option>
+                  <option>RUB</option>
+                  <option>BYR</option>
+                  <option>BTC</option>
+                  <option>UAH</option>
+                  <option>AUD</option>
+                  <option>CAD</option>
+                  <option>CHF</option>
+                  <option>CNH</option>
+                  <option>ETH</option>
+                  <option>GBP</option>
+                  <option>HKD</option>
+                  <option>JPY</option>
+                  <option>NZD</option>
+                </select>
+                <div class="select-arrow select-arrowTo"></div>
+              </div>
+
+              <div class="currency__changeSumma">
+                <label for="changeSumma" class="currency__label currency__labelInput">Сумма</label>
+                <input type="text" class="currency__changeInput" id="changeSumma" maxlength="10" minlength="1">
+              </div>
+            </div>
+
+            <div class="currency__changeRight">
+              <button type="button" class="currency__btn btn btn-blue btn-reset" id="changeBtn">Обменять</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="currency__right" id="currencyRight"></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+.account {
+
+  &__block {
+    padding: 50px;
+    justify-content: space-between;
+  }
+
+  // .account__title
+
+  &__title {
+    margin-right: 35px;
+  }
+
+  &__btn {
+    padding-left: 58px;
+    background-image: url('../img/plus.svg');
+    background-repeat: no-repeat;
+    background-position: left 10% center;
+  }
+
+  &__numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    // column-gap: 70px;
+    padding: 0 50px 50px 50px;
+  }
+}
+
+.card {
+  padding: 22px;
+  width: 30%;
+  background: var(--white);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+
+  &__number {
+    margin-bottom: 9px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--brand-black);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--black);
+  }
+
+  &__summa {
+    margin-bottom: 9px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--black);
+  }
+
+  &__blockBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__blockDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}

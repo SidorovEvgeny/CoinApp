@@ -1,0 +1,10 @@
+import './components/autorization';
+import './components/activLink';
+import './components/map';
+import './components/choices';
+import './components/accounts';
+import './components/backButton';
+import './components/history';
+import './components/autocomplite';
+import './components/currency';
+import './components/loader';

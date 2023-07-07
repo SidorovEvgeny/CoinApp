@@ -1,0 +1,63 @@
+.header {
+  max-height: 100px;
+  background-color: var(--brand-blue);
+
+  // .header__block
+  &__block {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .header__logo
+  &__logo {
+    object-fit: contain;
+  }
+}
+
+.nav {
+  display: none;
+  // .nav__list
+  &__list {
+    gap: 25px;
+  }
+
+  // .nav__item
+  &__item {}
+
+}
+
+.btn-white {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
+
+  &:focus-visible {
+    outline: none;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), var(--brand-blue);
+  }
+
+  &:hover {
+    outline: none;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), var(--brand-blue);
+  }
+
+  &:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), #116ACC;
+  }
+
+}
+
+.btn {
+  padding: 16px 24px;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 7px;
+}
+
+.active {
+ background-color: #A0C3FF;
+}
