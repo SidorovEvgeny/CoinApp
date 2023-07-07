@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="loader-block" id="BlockLoader">
+    <span class="loader"></span>
+  </div>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/currency/currency.html')
+    </main>
+  </div>
+</body>
+
+</html>

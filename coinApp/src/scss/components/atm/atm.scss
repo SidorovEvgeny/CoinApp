@@ -1,0 +1,12 @@
+.map {
+
+  &__title {
+    padding: 50px 50px 56px 50px;
+  }
+
+  &__container {
+    padding: 0 50px 50px 50px;
+    width: 100%;
+    height: calc(100vh - 246px)
+  }
+}

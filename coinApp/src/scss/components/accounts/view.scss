@@ -1,0 +1,280 @@
+.view {
+
+  // .view__block
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px 30px 50px;
+  }
+
+  &__container {
+    padding: 0 50px 80px 50px;
+  }
+
+  // .view__title
+  &__title {}
+
+  // .view__btn
+  &__btn {
+    padding-left: 58px;
+    background-image: url('../img/arrowBack.svg');
+    background-repeat: no-repeat;
+    background-position: left 14% center;
+  }
+
+  &__hederBlock {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__headerNumber {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    color: var(--black);
+
+
+    &::before {
+      content: '№        ';
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 40px;
+      color: var(--black);
+    }
+  }
+
+  &__headerBalance {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--black);
+    min-width: 210px;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: 'Баланс';
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      color: var(--black);
+    }
+  }
+
+  //card send
+  &__heroBlock {
+    display: flex;
+    padding-bottom: 50px;
+    column-gap: 5%;
+  }
+
+  &__card {
+    position: relative;
+    padding: 25px 48px;
+    width: 45.4%;
+    background-color: var(--gray-7);
+    border-radius: 50px;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--black);
+  }
+
+  &__inputDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 25px;
+  }
+
+  &__label {
+    margin-right: 18px;
+    max-width: 130px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--brand-black);
+  }
+
+  &__input {
+    padding-left: 16px;
+    margin-right: 18px;
+    width: 300px;
+    height: 44px;
+    background: var(--white);
+    border: 1px solid var(--gray-5);
+    border-radius: 7px;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-2);
+
+    &:focus {
+      background: rgba(160, 195, 255, 0.1);
+      border: 1px solid var(--brand-blue);
+      outline: 1px solid var(--brand-blue);
+    }
+
+    &:hover {
+      background: rgba(160, 195, 255, 0.1);
+      border: 1px solid var(--brand-blue);
+    }
+
+    &::placeholder {
+      color: var(--gray-4);
+    }
+  }
+
+  &__btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btnSend {
+    padding-left: 58px;
+    background-image: url('../img/mail.svg');
+    background-repeat: no-repeat;
+    background-position: left 14% center;
+    transform: translateX(10%);
+  }
+
+  &__inpBtnDelete {
+    display: none;
+    position: absolute;
+    left: 98%;
+    padding: 22px;
+    background-image: url('../img/delete.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 8px;
+    background-color: var(--white);
+  }
+
+  &__inpBtnSuccess {
+    display: none;
+    position: absolute;
+    left: 98%;
+    padding: 22px;
+    background-image: url('../img/check.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 8px;
+    background-color: var(--white);
+  }
+
+  &__dynamic {
+    padding: 25px 48px;
+    width: 49.6%;
+    background-color: var(--white);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  &__myChart {
+    max-height: 165px;
+  }
+
+  &__history {
+    padding: 25px 50px;
+    background: var(--gray-7);
+    border-radius: 56px;
+    cursor: pointer;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: var(--brand-blue);
+      border-radius: 15px;
+    }
+
+    &-parag {
+      font-family: 'Ubuntu';
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: var(--white);
+    }
+
+    &-date {
+      transform: translateX(-30px);
+    }
+
+    &-btn {
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+
+  &__block-line {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 82, 255, 0.1);
+    display: none;
+
+    &:nth-child(-n + 5) {
+      display: flex;
+    }
+  }
+
+  &__block-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: var(--gray-2);
+  }
+
+  &__block-amount {
+    transform: translateX(-20px);
+  }
+
+  .error-send {
+    position: absolute;
+    left: 40%;
+    display: none;
+    align-items: center;
+    padding-left: 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    background-image: url('../img/error.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 30px;
+  }
+
+  .success-send {
+    position: absolute;
+    left: 40%;
+    display: none;
+    align-items: center;
+    padding-left: 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    background-image: url('../img/success.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 30px;
+  }
+
+}

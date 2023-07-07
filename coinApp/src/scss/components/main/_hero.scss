@@ -1,0 +1,152 @@
+.hero {
+  height: calc(100vh - 100px);
+  @include flex-all-center;
+
+  // .hero__block
+  &__block {
+    padding: 50px 40px;
+    width: 500px;
+    background-color: #F3F4F6;
+    border-radius: 50px;
+  }
+
+  // .hero__title
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  // .hero__form
+  &__form {
+    label {
+      margin-right: 18px;
+      font-family: 'Ubuntu';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    input {
+      padding: 10px 10px 10px 16px;
+      width: 300px;
+      height: 44px;
+      font-family: 'Ubuntu';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--gray-2);
+      background: #FFFFFF;
+      border: 1px solid #9CA3AF;
+      border-radius: 7px;
+      transition: all .3s ease-in-out;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        background: rgba(160, 195, 255, 0.05);
+        border: 1px solid var(--brand-blue);
+      }
+
+      &:hover {
+        background: rgba(160, 195, 255, 0.05);
+        border: 1px solid var(--brand-blue);
+      }
+
+      &:hover::placeholder {
+        color: #9CA3AF;
+      }
+    }
+
+    input::placeholder {
+      font-family: 'Ubuntu';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6B7280;
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 40px;
+    margin-bottom: 30px;
+
+    &:first-child {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__input-login {
+    position: relative;
+
+    &::after {
+      content: 'Неверный логин';
+      position: absolute;
+      top: -50%;
+      left: 23%;
+      color: var(--brand-red);
+
+    }
+  }
+
+  &__input-password {
+    position: relative;
+
+    &::after {
+      content: 'Неверный пароль';
+      position: absolute;
+      top: -50%;
+      left: 23%;
+      color: var(--brand-red);
+    }
+  }
+
+
+  &__btn {
+    margin-left: 80px;
+  }
+}
+
+.btn-blue {
+  width: max-content;
+  background-color: var(--brand-blue);
+  color: var(--white);
+  transition: all .3s ease-in-out;
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid var(--brand-blue);
+  }
+
+  &:hover {
+    outline: none;
+    background-color: #5897DB;
+  }
+
+  &:active {
+    background-color: #0C4A8F;
+  }
+}
+
+.error {
+  &::before {
+    content: 'Что-то пошло не так, попробуйте повторить позже';
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--brand-red);
+  }
+}

@@ -1,0 +1,17 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/loader.scss";
+@import "./components/main/hero";
+@import "./components/accounts/accounts.scss";
+@import "./components/currency/currency.scss";
+@import "./components/atm/atm.scss";
+@import "./components/accounts/choices.scss";
+@import "./components/accounts/view.scss";
+@import "./components/accounts/history.scss";
+@import "./components/accounts/autocomplite.scss";
